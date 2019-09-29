@@ -7,8 +7,9 @@ com.android.support.design:28.0.0
 
 ## Modify the layout
 
-The root element is a CoordinatorLayout.
-It contains an AppBarLayout and a sibling NestedScrollView.
+The root element is a **CoordinatorLayout**.
+It contains an **AppBarLayout** and a sibling **NestedScrollView**.
+The **AppBarLayout** contains the **ToolBar** you want to scroll.
 
     <CoordinatorLayout>
 
@@ -22,7 +23,7 @@ It contains an AppBarLayout and a sibling NestedScrollView.
 
     </CoordinatorLayout>
 
-Set layout_behavior and layout_scrollFlags as follows
+Set **layout_scrollFlags** and **layout_behavior** attributes as follows:
 
     <?xml version="1.0" encoding="utf-8"?>
     <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
