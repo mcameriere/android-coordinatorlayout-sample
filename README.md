@@ -1,12 +1,28 @@
 # android-coordinatorlayout-sample
 An AppBarLayout that scrolls when you scroll a sibling NestedScrollView
 
-Add Library Dependency to com.android.support.design:28.0.0
+## Add Library Dependency
 
-Modify the layout as follows:
+com.android.support.design:28.0.0
 
-The root is a CoordinatorLayout.
+## Modify the layout
+
+The root element is a CoordinatorLayout.
 It contains an AppBarLayout and a sibling NestedScrollView.
+
+    <CoordinatorLayout>
+
+        <AppBarLayout>
+            <ToolBar/>
+        </AppBarLayout>
+
+        <NestedScrollView>
+            <!-- Your scrollable content here... -->
+        </NestedScrollView>
+
+    </CoordinatorLayout>
+
+Set layout_behavior and layout_scrollFlags as follows
 
     <?xml version="1.0" encoding="utf-8"?>
     <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
